@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,88 +13,120 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color:grey;
+            background-color: url(https://www.css-gradient.com/?c1=3c1bab&c2=e44283&gt=c&gd=dtl);
+           
+background: rgba(60, 27, 171, 1.0);
+background: conic-gradient(from 315deg, rgba(60, 27, 171, 1.0), rgba(228, 66, 131, 1.0));;
+            flex-direction: column;
+            text-align: center;
         }
 
         .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: url(  https://www.css-gradient.com/?c1=d4337a&c2=882997&gt=l&gd=dcc);
+            background: rgba(226, 88, 149, 1.0);
+background: linear-gradient(45deg, rgba(226, 88, 149, 1.0), rgba(179, 77, 196, 1.0));
+        }
 
-h1 {
-  
-    margin-top: 5px;
-    color: #564045;
-    font-size: 36px;
-    white-space: nowrap; 
-}
+        h1 {
+            margin-top: 5px;
+            color: #0c0c0c;
+            font-size: 36px;
+            white-space: nowrap;
+        }
 
-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
 
-button:hover {
-    background-color: #0056b3;
-}
+        button:hover {
+            background-color: #0056b3;
+        }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #6754e5;
-    border-radius: 5px;
-}
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #6754e5;
+            border-radius: 5px;
+        }
 
-button[type="submit"] {
-    background-color: #28a745;
-    transition: background-color 0.3s;
-}
+        button[type="submit"] {
+            background-color: #28a745;
+            transition: background-color 0.3s;
+        }
 
-button[type="submit"]:hover {
-    background-color: #218838;
-}
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
 
-.flex-container input {
-    margin-right: 10px;
-}
-.Subscribers{
-    color: #564045;
-  padding-left: 12rem;
+        .flex-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-}
+        .flex-container input {
+            margin-right: 10px;
+        }
+
+        .Subscribers {
+            color: #564045;
+            padding-left: 12rem;
+        }
+
+        /* Additional styles for smaller screens */
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            input[type="text"] {
+                width: calc(100% - 20px);
+            }
+
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .flex-container input {
+                margin: 10px 0;
+                width: 100%;
+            }
+
+            
+        }
     </style>
 </head>
 
 <body>
+    <img src="Logo.png" alt="AlmaBetter" style="max-width: 100%; margin-bottom: 30px;">
     <div class="container">
-        
         <h1>Get YouTube Subscribers</h1>
-        <h2 class="Subscribers">(Alamabetter backend project)</h2>
+        
         <button id="subscriberButton">Subscribers</button>
         <button id="subscriberNameButton">Subscriber by Name</button>
         <div class="flex-container">
             <input type="text" id="subscriberIdInput" placeholder="Enter ID">
             <button id="subscriberIdButton">Subscriber by ID</button>
         </div>
-        <h5> <b> Demo id :- </b> ( 65298b3e40c21d1f047a20e7 )</h5>
-        
+        <h5><b> Demo id :- </b> ( 652d44dd357fbf3d005b4403 )</h5>
     </div>
 
     <script>
@@ -110,14 +142,14 @@ button[type="submit"]:hover {
 
             // Add a click event listener to the "Subscribers" button
             subscribersButton.addEventListener("click", function() {
-                // Redirect to "http://localhost:3000/subscribers"
-                window.location.href = "https://get-youtube-subscribers-p7ok.onrender.com/subscribers";
+                // Redirect to "/subscribers"
+                window.location.href = "https://youtube-subscribers1.onrender.com/subscribers";
             });
 
             // Add a click event listener to the "Subscriber by Name" button
             subscriberNameButton.addEventListener("click", function() {
-                // Redirect to "http://localhost:3000/subscribers/name"
-                window.location.href = "https://get-youtube-subscribers-p7ok.onrender.com/subscribers/name";
+                // Redirect to "/subscribers/name"
+                window.location.href = "https://youtube-subscribers1.onrender.com/subscribers/name";
             });
 
             // Add a click event listener to the "Subscriber by ID" button
@@ -129,14 +161,12 @@ button[type="submit"]:hover {
                 if (specificId === "") {
                     alert("Please enter an ID.");
                 } else {
-                    // Redirect to "http://localhost:3000/subscribers/:id" with the specific ID
-                    window.location.href = "https://get-youtube-subscribers-p7ok.onrender.com/" + specificId;
+                    // Redirect to "/subscribers/:id" with the specific ID
+                    window.location.href = "https://youtube-subscribers1.onrender.com/subscribers/" + specificId;
                 }
             });
         });
     </script>
 </body>
 
-</html> 
-
-
+</html>
