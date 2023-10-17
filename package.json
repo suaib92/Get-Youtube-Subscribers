@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "custom-test": "cd src && npx mocha test/app.test" , 
     "build": "npm i",
     "start": "node ./index.js"
   },
@@ -18,6 +19,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "supertest": "^6.3.3"
   }
 }
