@@ -209,7 +209,7 @@ app.post('/subscribers/:id', async (req, res) => {
     const id = req.params.id;
 
     if (!name || !subscribedChannel) {
-      return res.status(400).json({ message: 'Name and subscribedChannel are required.' });
+      return res.status(400).json({ message: 'Both name and subscribedChannel are required.' });
     }
 
     // Create a new subscriber with the provided ID
