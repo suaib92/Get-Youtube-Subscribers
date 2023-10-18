@@ -232,8 +232,8 @@ const swaggerDefinition = {
     description: 'API for managing subscribers',
   },
   servers: [
-    { 
-      url: process.env.MONGODB_URL || 'HTTPS', 
+    {
+      url: 'https://get-youtube-subscribers-p7ok.onrender.com' 
     },
   ],
 };
